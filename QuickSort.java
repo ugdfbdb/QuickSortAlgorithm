@@ -3,15 +3,16 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
         int[] myArray = {64, 34, 25, 12, 22, 11, 90, 5, 11};
-        System.out.println(Arrays.toString(sort(myArray)));
+        QuickSort sorter = new QuickSort();
+        System.out.println(Arrays.toString(sorter.sort(myArray)));
     }
 
-    public static int[] sort(int[] array) {
+    public int[] sort(int[] array) {
         quicksort(array, 0, array.length - 1);
         return array;
-    }   
+    }
 
-    public static void quicksort(int[] array, int low, int high) {
+    public void quicksort(int[] array, int low, int high) {
         if (low < high) {
             int pivotIndex = partition(array, low, high);
             quicksort(array, low, pivotIndex - 1);
@@ -19,7 +20,7 @@ public class QuickSort {
         }
     }
 
-    public static int partition(int[] array, int low, int high) {
+    public int partition(int[] array, int low, int high) {
         int pivot = array[high];
         int i = low - 1;
 
