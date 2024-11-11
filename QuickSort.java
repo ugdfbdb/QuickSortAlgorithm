@@ -1,13 +1,16 @@
 public class QuickSort {
     public static void main(String[] args) {
-        int[] myArray = {64, 34, 25, 12, 22, 11, 90, 5};
-        quicksort(myArray, 0, myArray.length - 1);
-
-        System.out.print("Sorted array: ");
-        for (int value : myArray) {
-            System.out.print(value + " ");
+        int[] myArray = {64, 34, 25, 12, 22, 11, 90, 5, 11};
+        sort(myArray);
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.print(myArray[i] + " ");
         }
     }
+
+    public static int[] sort(int[] array) {
+        quicksort(array, 0, array.length - 1);
+        return array;
+    }   
 
     public static void quicksort(int[] array, int low, int high) {
         if (low < high) {
