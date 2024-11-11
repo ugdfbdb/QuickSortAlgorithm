@@ -1,10 +1,9 @@
+import java.util.Arrays;
+
 public class QuickSort {
     public static void main(String[] args) {
         int[] myArray = {64, 34, 25, 12, 22, 11, 90, 5, 11};
-        sort(myArray);
-        for (int i = 0; i < myArray.length; i++) {
-            System.out.print(myArray[i] + " ");
-        }
+        System.out.println(Arrays.toString(sort(myArray)));
     }
 
     public static int[] sort(int[] array) {
