@@ -25,3 +25,5 @@ The Quick Sort algorithm is a popular sorting approach based on the divide-and-c
 2. Open a terminal and navigate to the folder containing the code.
 3. Compile the Java file: `javac Main.java`
 4. Run the Java file: `java Main`
+
+## Further information https://github.com/bradtraversy/traversy-js-challenges/blob/main/09-sorting-algorithms/10-quick-sort-algorithm/readme.md
